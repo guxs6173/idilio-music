@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Idilio Music</title>
+    <link rel="icon" type="image/jpeg" href="/idilio-music/logo.jpeg">
+    <script>
+      window.__errors = [];
+      window.onerror = function(msg, url, line, col, error) {
+        window.__errors.push({ msg: msg, url: url, line: line, col: col, error: error });
+        var d = document.getElementById('__err');
+        if (!d) { d = document.createElement('pre'); d.id = '__err'; d.style.cssText = 'position:fixed;bottom:0;left:0;right:0;background:#c00;color:#fff;padding:20px;font-size:14px;z-index:9999;white-space:pre-wrap;max-height:50vh;overflow:auto'; document.body.appendChild(d); }
+        d.textContent = 'ERROR: ' + (error && error.stack ? error.stack : msg) + '\n\nAll errors:\n' + window.__errors.map(function(e,i){return i+': '+e.msg}).join('\n');
+        return false;
+      };
+      window.addEventListener('unhandledrejection', function(e) {
+        window.__errors.push({ msg: 'Unhandled Promise: ' + (e.reason && e.reason.message ? e.reason.message : e.reason) });
+        var d = document.getElementById('__err');
+        if (!d) { d = document.createElement('pre'); d.id = '__err'; d.style.cssText = 'position:fixed;bottom:0;left:0;right:0;background:#c00;color:#fff;padding:20px;font-size:14px;z-index:9999;white-space:pre-wrap;max-height:50vh;overflow:auto'; document.body.appendChild(d); }
+        d.textContent = 'ERROR: ' + (e.reason && e.reason.stack ? e.reason.stack : (e.reason && e.reason.message ? e.reason.message : e.reason));
+      });
+    </script>
+    <script type="module" crossorigin src="/idilio-music/assets/index-C_Ix23oO.js"></script>
+    <link rel="stylesheet" crossorigin href="/idilio-music/assets/index-QvUAXM5E.css">
+  </head>
+  <body>
+    <div id="root"></div>
+  </body>
+</html>
+
