@@ -1,0 +1,132 @@
+import { EventData } from './types';
+
+export const INITIAL_EVENTS: EventData[] = [
+  {
+    id: 'event-active',
+    name: 'Show Teatro Principal',
+    date: '21 Jul',
+    balance: 2500,
+    deductions: {
+      berly: 150,
+      myki: 150,
+      wili: 150,
+      gustavo: 150,
+      animacion: 100,
+      bajo: 120,
+      movilidad: 150,
+      viaticos: 100,
+    },
+    additionalExpenses: [
+      {
+        id: 'exp-1',
+        date: '21 Jul',
+        description: 'Combustible Van de Gira',
+        category: 'VIÁTICOS',
+        amount: 80,
+      },
+      {
+        id: 'exp-2',
+        date: '21 Jul',
+        description: 'Catering Post-Show',
+        category: 'GASTOS IMPREVISTOS',
+        amount: 120,
+      },
+    ],
+  },
+  {
+    id: 'event-past-1',
+    name: 'Festival de Invierno Rock',
+    date: '10 Jul 2026',
+    balance: 3200,
+    deductions: {
+      berly: 180,
+      myki: 180,
+      wili: 180,
+      gustavo: 180,
+      animacion: 120,
+      bajo: 150,
+      movilidad: 180,
+      viaticos: 120,
+    },
+    additionalExpenses: [
+      {
+        id: 'exp-p1-1',
+        date: '10 Jul',
+        description: 'Peajes autopista nacional',
+        category: 'VIÁTICOS',
+        amount: 45,
+      },
+      {
+        id: 'exp-p1-2',
+        date: '10 Jul',
+        description: 'Bebidas e hidratación backstage',
+        category: 'GASTOS IMPREVISTOS',
+        amount: 90,
+      },
+      {
+        id: 'exp-p1-3',
+        date: '09 Jul',
+        description: 'Impresión de afiches y folletos',
+        category: 'OTROS',
+        amount: 60,
+      },
+    ],
+  },
+  {
+    id: 'event-past-2',
+    name: 'Show Privado Hotel Alvear',
+    date: '04 Jul 2026',
+    balance: 1800,
+    deductions: {
+      berly: 150,
+      myki: 150,
+      wili: 150,
+      gustavo: 150,
+      animacion: 0, // No animacion for acoustic show
+      bajo: 100,
+      movilidad: 100,
+      viaticos: 80,
+    },
+    additionalExpenses: [
+      {
+        id: 'exp-p2-1',
+        date: '04 Jul',
+        description: 'Taxi traslado equipos extra',
+        category: 'VIÁTICOS',
+        amount: 35,
+      },
+    ],
+  },
+  {
+    id: 'event-past-3',
+    name: 'Concierto Pub La Trastienda',
+    date: '28 Jun 2026',
+    balance: 1400,
+    deductions: {
+      berly: 120,
+      myki: 120,
+      wili: 120,
+      gustavo: 120,
+      animacion: 80,
+      bajo: 100,
+      movilidad: 100,
+      viaticos: 50,
+    },
+    additionalExpenses: [
+      {
+        id: 'exp-p3-1',
+        date: '28 Jun',
+        description: 'Cena pos-evento de la banda',
+        category: 'VIÁTICOS',
+        amount: 110,
+      },
+      {
+        id: 'exp-p3-2',
+        date: '28 Jun',
+        description: 'Cuerdas de guitarra de repuesto',
+        category: 'OTROS',
+        amount: 25,
+      },
+    ],
+  },
+];

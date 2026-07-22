@@ -1,0 +1,6 @@
+{
+  "name": "Idilio Music",
+  "description": "Gestor de presupuestos, deducciones y egresos operativos para eventos musicales",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
